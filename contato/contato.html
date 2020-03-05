@@ -1,0 +1,326 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contato.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-12">
+            <img src="download.jpg" name="links_topo" class="logo my-2" />
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Formulario</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Controle de vultos<span class="sr-only">(Página
+                        atual)</span></a>
+                <a class="nav-item nav-link active" href="#">Pendencias</a>
+            </div>
+        </div>
+    </nav>
+    <article class="container-fluid">
+        <div class="row">
+            <div class="col-3"></div>
+
+            <div class="col-12 col-lg-6 my-3">
+
+                <div class="card my-3">
+                    <div class="card-body shadow-lg">
+                        <form action="cad_contato.php">
+
+                            <div class="form-row col-auto">
+                                <div class="form-group mx-2">
+                                    <label class="legenda1">BA:</label>
+                                    <div class="">
+                                        <input name="ba" class="form-control" type="text" id="ba">
+                                    </div>
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label class="legenda2">UF:</label>
+                                    <div class="">
+                                        <select name="uf" class="custom-select" id="uf">
+                                            <option selected>---</option>
+                                            <option value="1">AC</option>
+                                            <option value="2">DF</option>
+                                            <option value="3">GO</option>
+                                            <option value="4">MS</option>
+                                            <option value="5">MT</option>
+                                            <option value="6">RO</option>
+                                            <option value="7">TO</option>
+                                            <option value="8">PR</option>
+                                            <option value="9">RS</option>
+                                            <option value="10">SC</option>
+                                            <option value="11">SP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label class="legenda3">Tecnica Ofensora:</label>
+                                    <div>
+                                        <select name="tecnica_ofensora" class="custom-select" id="tecnica_ofensora">
+                                            <option selected>---</option>
+                                            <option value="1">ADS</option>
+                                            <option value="2">AR</option>
+                                            <option value="3">CD</option>
+                                            <option value="4">CX</option>
+                                            <option value="5">EN</option>
+                                            <option value="6">FO</option>
+                                            <option value="7">IE</option>
+                                            <option value="8">MV</option>
+                                            <option value="9">TX</option>
+                                            <option value="10">TX/FO</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="legenda">Cód Localidade:</label><br>
+                                    <div class="">
+                                        <input name="cod_localidade" class="form-control" type="text"
+                                            id="cod_localidade">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-row col-auto">
+                                <div class="form-group mx-2">
+                                    <label class="legenda">Nome da Localidade:</label><br>
+                                    <div>
+                                        <input name="nome_localidade" class="form-control" type="text"
+                                            id="nome_localidade">
+                                    </div>
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label class="legenda">Cód Estação:</label><br>
+                                    <div class="">
+                                        <input name="cod_estacao" class="form-control" type="text" id="cod_estacao">
+                                    </div>
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label class="legenda">Nome da Estação:</label><br>
+                                    <div class="">
+                                        <input name="nome_estacao" class="form-control" type="text" id="nome_estacao">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-row col-auto">
+                                <div class="form-group mx-2">
+                                    <label for="example-date-input" class="legenda">Data:</label>
+                                    <div>
+                                        <input name="data" class="form-control" type="date" id="data">
+                                    </div>
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label for="example-time-input" class="legenda">Hora inicio
+                                        anormalidade:</label>
+                                    <div>
+                                        <input name="hora_anormalidade" class="form-control" type="time"
+                                            value="--:--:--" id="hora_anormalidade">
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label>Tempo (min):</label>
+                                    <div>
+                                        <input name=" tempo_min" class="form-control" type="text" id="tempo_min">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row col-auto">
+                                <div class="form-group mx-2">
+                                    <label>Fixo Afetados:</label>
+                                    <div class="">
+                                        <input name="fixo_afetados" class="form-control" type="text" id="fixo_afetados">
+                                    </div>
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label class="legenda">Velox afetados:</label><br>
+                                    <div>
+                                        <input name="velox_afetados" class="form-control" type="text"
+                                            id="velox_afetados">
+                                    </div>
+
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label class="legenda">2G Movel Afetados:</label><br>
+                                    <div>
+                                        <input name="movel2g_afetados" class="form-control" type="text"
+                                            id="movel2g_afetados">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row col-auto">
+                                <div class="form-group mx-2">
+                                    <label class="legenda">3G Movel Afetados:</label><br>
+                                    <div>
+                                        <input name="movel3g_afetados" class="form-control" type="text"
+                                            id="movel3g_afetados">
+                                    </div>
+                                </div>
+                                <div class="form-group mx-2">
+                                    <label class="legenda">4G Movel Afetados:</label><br>
+                                    <div>
+                                        <input name="movel4g_afetados" class="form-control" type="text"
+                                            id="movel4g_afetados">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="form-group col-auto">
+                                <div class="form-group">
+                                    <label class="legenda">Fato:</label>
+                                    <textarea type="text" class="form-control" name="fato" id="fato"
+                                        rows="2"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="legenda">Ação:</label>
+                                    <textarea name="acao" class="form-control" id="acao" rows="2" id="acao"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row col-auto">
+                                <div class="form-group mx-1">
+                                    <label class="legenda">Classificação do Vulto:</label>
+                                    <select name="classificacao_vulto" class="custom-select " id="classificacao_vulto">
+                                        <option selected>---</option>
+                                        <option value="1">Abalroamento de Poste</option>
+                                        <option value="2">Ação de Terceiros</option>
+                                        <option value="3">Ação de Terceiros LL</option>
+                                        <option value="4">Acidente</option>
+                                        <option value="5">Acidente – Swap Terceiros</option>
+                                        <option value="6">Desgaste</option>
+                                        <option value="7">Falha de Equipamento/Infraestrutura</option>
+                                        <option value="8">Falta de Energia Elétrica</option>
+                                        <option value="9">Fenômenos Climáticos</option>
+                                        <option value="10">Furto / Vandalismo</option>
+                                        <option value="11">Insetos</option>
+                                        <option value="12">Janela de Manutenção</option>
+                                        <option value="13">Outros</option>
+                                        <option value="14">Roubo ou Furto</option>
+                                        <option value="15">Vandalismo</option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group mx-1">
+                                    <label class="legenda">Status Relatório da Falha:</label>
+                                    <select name="status_relatorio_falha" class="custom-select"
+                                        id="status_relatorio_falha">
+                                        <option selected>---</option>
+                                        <option value="1">Emitido</option>
+                                        <option value="2">Não Aplicavel</option>
+                                        <option value="3">Pendente</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row col-auto">
+                                <div class="form-group">
+                                    <label class="legenda">Status Relatório BO:</label>
+                                    <select name="status_relatorio_bo" class="custom-select custom-select"
+                                        id="status_relatorio_bo">
+                                        <option selected>---</option>
+                                        <option value="1">Aberto</option>
+                                        <option value="2">Não Aplicavel</option>
+                                        <option value="3">Recusado</option>
+                                        <option value="4">Em abertura</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="legenda">Status Envio da Notificação:</label>
+                                    <select name="status_envio_notificação" class="custom-select"
+                                        id="status_envio_notificação">
+                                        <option selected>---</option>
+                                        <option value="1">Notificado</option>
+                                        <option value="2">Não Aplicavel</option>
+                                        <option value="3">Causador Não Identificado</option>
+                                        <option value="4">Recusada</option>
+                                        <option value="5">Em Elaboração</option>
+                                        <option value="6">Pendente</option>
+                                        <option value="5">Pendente de Aprovação</option>
+                                        <option value="6">Em Abertura</option>
+                                        <option value="6">Em Análise</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row col-auto">
+                                <div class="form-group mx-2">
+                                    <label class="legenda">Sharepoint Relatório da Falha:</label>
+                                    <select name="sharepoint_relatorio_falha" class="custom-select custom-select-sm"
+                                        id="sharepoint_relatorio_falha">
+                                        <option selected>---</option>
+                                        <option value="1">Não Aplicavel</option>
+                                        <option value="2">Não Localizado</option>
+                                        <option value="3">OK</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="form-group mx-2">
+                                    <label class="legenda">Sharepoint BO:</label>
+                                    <select name="sharepoint_bo" class="custom-select custom-select-sm"
+                                        id="sharepoint_bo" name='comment'>
+                                        <option selected>---</option>
+                                        <option value="1">Não Aplicavel</option>
+                                        <option value="2">Não Localizado</option>
+                                        <option value="3">OK</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row col-auto">
+                                <div class="form-group ">
+                                    <label class="legend">Portal de Notificação:</label>
+                                    <select name="portal_notificacoes" class="custom-select "
+                                        id="portal_notificacoes" >
+                                        <option selected>---</option>
+                                        <option value="1">Não Aplicavel</option>
+                                        <option value="2">Não Localizado</option>
+                                        <option value="3">OK</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row col-auto">
+                                    <button class="btn btn-primary btn-block">enviar</button>
+                            </div>
+                            
+                        </form>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-3"></div>
+        </div>
+
+
+    </article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
